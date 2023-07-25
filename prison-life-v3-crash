@@ -1,0 +1,41 @@
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+local backpack = plr.Backpack
+
+local root = char:WaitForChild('HumanoidRootPart')
+local uzi = Vector3.new(1842, 156, 2697)
+
+root.CFrame = CFrame.new(uzi)
+wait()
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("UZI"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("Remington 870"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("M9"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("UZI"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("Remington 870"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("M9"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("UZI"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("Remington 870"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+local args = {[1] = workspace:WaitForChild("Prison_ITEMS"):WaitForChild("giver"):WaitForChild("M9"):WaitForChild("ITEMPICKUP")}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ItemHandler"):InvokeServer(unpack(args))
+
+wait()
+
+backpack['Remington 870'].Parent = char
+backpack['UZI'].Parent = char
+backpack['M9'].Parent = char
+
+wait()
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("server nuked by doom#IOOO","All")
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("server nuked by doom#IOOO","All") 
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("server nuked by doom#IOOO","All")
+
+char.Humanoid.Health = 0
